@@ -23,10 +23,4 @@ open class BaseActivity : AppCompatActivity() {
     protected fun getAppComponent(): AppComponent {
         return (application as MyApplication).getAppComponent()
     }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-
-    }
 }

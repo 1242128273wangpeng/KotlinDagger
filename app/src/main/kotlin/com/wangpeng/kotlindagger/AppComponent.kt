@@ -3,6 +3,7 @@ package com.wangpeng.kotlindagger
 import android.content.Context
 import android.content.SharedPreferences
 import com.wangpeng.kotlindagger.module.AppModule
+import com.wangpeng.kotlindagger.module.ApplicationContext
 import com.wangpeng.kotlindagger.utils.ToastUtil
 import dagger.Component
 import javax.inject.Singleton
@@ -13,7 +14,9 @@ import javax.inject.Singleton
 @Singleton
 @Component(modules = arrayOf(AppModule::class))
 interface AppComponent {
-    fun context(): Context
+
+    @ApplicationContext
+    fun appContext(): Context
 
     fun toastUtil(): ToastUtil
 

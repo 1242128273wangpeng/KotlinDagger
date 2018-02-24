@@ -13,7 +13,6 @@ import com.wangpeng.kotlindagger.bean.BaseData
 import com.wangpeng.kotlindagger.common.NetManager
 import com.wangpeng.kotlindagger.module.AppModule
 import com.wangpeng.kotlindagger.repository.RemoteRepository
-import com.wangpeng.kotlindagger.repository.RemoteRepository_Factory
 import com.wangpeng.kotlindagger.repository.Repository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.functions.Consumer
