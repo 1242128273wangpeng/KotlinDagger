@@ -20,7 +20,7 @@ ext.versions = [
         androidDatabinding: "2.3.2",
         dagger            : "2.11",
         okhttp            : "3.8.0",
-        picasso           : "2.5.2",
+        glide             : "4.0.0",
         retrofit          : "2.3.0",
 ]
 

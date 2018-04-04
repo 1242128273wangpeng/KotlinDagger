@@ -23,4 +23,6 @@ open class BaseActivity : AppCompatActivity() {
     protected fun getAppComponent(): AppComponent {
         return (application as MyApplication).getAppComponent()
     }
+
+
 }

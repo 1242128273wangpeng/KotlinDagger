@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.View
 import com.wangpeng.kotlindagger.adapter.NewsAdapter
 import com.wangpeng.kotlindagger.api.ApiService
+import com.wangpeng.kotlindagger.api.RestApi
 import com.wangpeng.kotlindagger.bean.BaseData
 import com.wangpeng.kotlindagger.common.NetManager
 import com.wangpeng.kotlindagger.module.AppModule
@@ -20,8 +21,11 @@ import io.reactivex.schedulers.Schedulers
 import javax.inject.Inject
 
 class MainActivity : BaseActivity() {
+
     @Inject
     internal lateinit var mRepository: RemoteRepository
+//    @Inject
+//    internal lateinit var mRestApi: RestApi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

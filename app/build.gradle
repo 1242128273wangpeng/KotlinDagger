@@ -6,7 +6,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.wangpeng.kotlindagger"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -23,6 +23,8 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 
@@ -41,15 +43,15 @@ dependencies {
     /* Retrofit2 */
     compile "com.squareup.retrofit2:retrofit:${versions.retrofit}"
     compile "com.squareup.retrofit2:converter-gson:${versions.retrofit}"
-    compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
     /* Dagger2 */
     compile "com.google.dagger:dagger:${versions.dagger}"
     compile "com.google.dagger:dagger-android:${versions.dagger}"
     compile "com.google.dagger:dagger-android-support:${versions.dagger}"
     kapt "com.google.dagger:dagger-compiler:${versions.dagger}"
     kapt "com.google.dagger:dagger-android-processor:${versions.dagger}"
-    /* Picasso */
-    compile "com.squareup.picasso:picasso:${versions.picasso}"
+    /* glide */
+    compile "com.github.bumptech.glide:glide:${versions.glide}"
     /* Okhttp3 */
     compile "com.squareup.okhttp3:okhttp:${versions.okhttp}"
     compile "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"

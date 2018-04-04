@@ -9,9 +9,9 @@ import retrofit2.http.Query
  * Created by wangpeng on 2018/1/22.
  */
 interface ApiService {
-    @GET("query")
+    @GET(Endpoints.QUERY_NEWS)
     fun getQueryLists(@Query("q") q: String): Observable<BaseData>
 
-    @GET("words")
+    @GET(Endpoints.WORDS_NEWS)
     fun getWordLists(): Observable<BaseData>
 }
